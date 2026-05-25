@@ -1,6 +1,3 @@
-# codaragora-blog
-Blog em desenvolvimento criado para fins de estudo e evolução no front-end.
-
 # 🚀 CodarAgora
 
 Projeto desenvolvido durante minha jornada de aprendizado em Desenvolvimento Web Front-End.
@@ -123,7 +120,7 @@ Pretendo futuramente adicionar:
 
 # 👨‍💻 Autor
 
-Desenvolvido por Clebson Silva
+Desenvolvido por Clebson  
 Front-End Developer em evolução 🚀
 
 Futuro FullStack.

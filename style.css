@@ -1,0 +1,869 @@
+/* ========================================
+RESET GLOBAL
+======================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========================================
+VARIÁVEIS GLOBAIS
+======================================== */
+
+:root{
+    --header-height: 70px;
+
+    --color-primary: #0f172a;
+    --color-secondary: #061064;
+    --color-accent: #38bdf8;
+    --color-text: #ffffff;
+}
+
+/* ========================================
+BODY
+======================================== */
+
+/*
+Ajustado:
+- padding-top evita que o header fixo esconda conteúdo
+- font-family global melhora consistência visual
+*/
+
+body{
+    padding-top: var(--header-height);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0e123a;
+    
+    overflow-x: hidden;
+}
+
+
+/* ========================================
+HEADER
+======================================== */
+
+/*
+Ajustado:
+- Header fixo
+- Melhor organização responsiva
+- z-index mantém o menu acima das seções
+*/
+
+/* ========================================
+HEADER
+======================================== */
+
+.header{
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    height: var(--header-height);
+
+    background-color: rgba(15, 23, 42, 0.95);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ========================================
+CONTAINER
+======================================== */
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+
+    height: 100%;
+
+    margin: 0 auto;
+
+    padding: 0 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ========================================
+LOGO
+======================================== */
+
+.header__logo a{
+    text-decoration: none;
+
+    color: var(--color-text);
+
+    font-size: 1.3rem;
+
+    font-weight: 700;
+}
+
+/* ========================================
+NAV
+======================================== */
+
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+
+/* ========================================
+MENU
+======================================== */
+
+.header__menu{
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    list-style: none;
+}
+
+/* ========================================
+LINKS
+======================================== */
+
+.header__link{
+    text-decoration: none;
+
+    color: #e2e8f0;
+
+    padding: 0.7rem 1rem;
+
+    border-radius: 10px;
+
+    transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.header__link:hover{
+    color: var(--color-accent);
+
+    background-color: rgba(255,255,255,0.05);
+}
+
+.header__link:focus-visible{
+    outline: 2px solid var(--color-accent);
+
+    outline-offset: 3px;
+}
+
+/* ========================================
+HERO SECTION
+======================================== */
+
+/*
+Ajustado:
+- 100svh melhora comportamento no mobile
+- clamp mantém responsividade fluida
+*/
+
+.hero{
+    min-height: 100svh;
+
+    padding: clamp(40px, 8vw, 80px) 5%;
+
+    background: linear-gradient(
+        135deg,
+        #061064 0%,
+        #0c6d86 100%
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* ========================================
+ANIMAÇÃO
+======================================== */
+
+@keyframes fadeIn{
+
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+HERO CONTENT
+======================================== */
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    gap: clamp(16px, 3vw, 32px);
+}
+
+/* ========================================
+TÍTULO
+======================================== */
+
+.hero__titulo{
+    font-size: clamp(2rem, 5vw, 3.5rem);
+
+    color: #e6f1ff;
+
+    font-weight: bold;
+
+    line-height: 1.2;
+}
+
+/* ========================================
+TEXTO
+======================================== */
+
+.hero__texto{
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+
+    color: var(--color-text);
+
+    line-height: 1.8;
+
+    max-width: 700px;
+}
+
+/* ========================================
+DESTAQUE
+======================================== */
+
+.hero__highlight{
+    color: #ffd43b;
+}
+
+/* ========================================
+BOTÃO
+======================================== */
+
+/*
+Ajustado:
+- transition suave
+- hover moderno
+- acessibilidade visual
+*/
+
+.hero__btn{
+    background-color: var(--color-secondary);
+
+    color: var(--color-text);
+
+    text-decoration: none;
+
+    padding: 1rem 2rem;
+
+    border-radius: 30px;
+
+    border: 2px solid yellow;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+    transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.hero__btn:hover{
+    background-color: #2186a0;
+
+    transform: translateY(-3px);
+}
+
+.hero__btn:focus-visible{
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+}
+
+/* ========================================
+SECTION SOBRE
+======================================== */
+
+.section__sobre{
+    min-height: 80vh;
+
+    padding: 60px 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0e123a;
+}
+
+/* ========================================
+CONTAINER SOBRE
+======================================== */
+
+/*
+Ajustado:
+- max-width evita conteúdo esticado
+*/
+
+.container__sobre{
+    width: 100%;
+    max-width: 1200px;
+
+    padding: 2rem;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #000000 0%,
+        #1d178a 100%
+    );
+}
+
+/* ========================================
+APRESENTAÇÃO
+======================================== */
+
+/*
+Ajustado:
+- justify-content center melhora equilíbrio
+- flex-wrap melhora responsividade
+*/
+
+.container__apresentacao{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 40px;
+}
+
+/* ========================================
+TEXTO SOBRE
+======================================== */
+
+/*
+Ajustado:
+- removido erro de seletor
+- line-height melhora leitura
+*/
+
+.texto-sobre{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    max-width: 600px;
+
+    color: #5ff907;
+
+    line-height: 1.8;
+
+    gap: 20px;
+}
+
+.texto-sobre h2{
+    color: #fff;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+/* ========================================
+IMAGEM
+======================================== */
+
+/*
+Ajustado:
+- width 100% evita overflow
+- hover suave
+*/
+
+.img-sobre{
+    width: 100%;
+    max-width: 300px;
+
+    height: auto;
+
+    border-radius: 30px;
+    border: 2px solid yellow;
+
+    transition: transform 0.3s ease;
+}
+
+.img-sobre:hover{
+    transform: scale(1.03);
+}
+
+/* ========================================
+SECTION ARTIGOS
+======================================== */
+
+.section__artigos{
+    min-height: 100vh;
+
+    padding: clamp(4rem, 6vw, 6rem) 1.5rem;
+
+    background: linear-gradient(
+        135deg,
+        #08155d 0%,
+        #3db5f6 100%
+    );
+
+    display: flex;
+    justify-content: center;
+}
+
+.artigos__wrapper{
+    width: 100%;
+    max-width: 1200px;
+}
+
+.artigos__titulo{
+    text-align: center;
+
+    color: #fff;
+
+    margin-bottom: 3rem;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.artigos__container{
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.artigos__card{
+    flex: 1 1 320px;
+
+    max-width: 500px;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #241550 0%,
+        #010507 100%
+    );
+
+    transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.artigos__card:hover{
+    transform:
+    translateY(-8px)
+    scale(1.01);
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,0.35);
+}
+
+.artigos__card h3{
+    color: #fff;
+
+    text-align: center;
+
+    font-size: 1.5rem;
+}
+
+.artigos__card p{
+    color: #9bdcff;
+
+    text-align: center;
+
+    line-height: 1.8;
+}
+
+.cards__texto{
+    color: #fff;
+
+    line-height: 1.7;
+
+    font-weight: 300;
+}
+
+/* ========================================
+FOOTER
+======================================== */
+
+.footer__container{
+    min-height: 80px;
+
+    padding: 20px 5%;
+
+    background-color: #0f1a73;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========================================
+TEXTO FOOTER
+======================================== */
+
+.autorais{
+    color: #fff;
+
+    text-align: center;
+
+    font-size: clamp(1rem, 3vw, 1.2rem);
+
+    line-height: 1.6;
+}
+
+
+/* ========================================
+README SECTION
+======================================== */
+
+.readme__section{
+    min-height: 70vh;
+
+    padding: clamp(4rem, 8vw, 6rem) 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000000;
+}
+
+/* ========================================
+README CONTAINER
+======================================== */
+
+.readme__container{
+    width: 100%;
+    max-width: 1200px;
+
+    padding: clamp(2rem, 5vw, 4rem);
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 2rem;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #022c25 0%,
+        #031b36 100%
+    );
+
+    box-shadow:
+    0 10px 30px rgba(5, 235, 251, 0.15);
+}
+
+/* ========================================
+TÍTULO
+======================================== */
+
+.readme__titulo{
+    width: 100%;
+
+    text-align: center;
+
+    color: yellow;
+
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+
+    margin-bottom: 1rem;
+
+    line-height: 1.3;
+}
+
+/* ========================================
+TEXTO INTRODUÇÃO
+======================================== */
+
+.readme__texto{
+    width: 100%;
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    font-size: clamp(1rem, 2vw, 1.2rem);
+
+    line-height: 1.8;
+}
+
+/* ========================================
+CARDS
+======================================== */
+
+.readme__card{
+    flex: 1 1 320px;
+
+    max-width: 500px;
+
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+
+    border-radius: 25px;
+
+    background: linear-gradient(
+        135deg,
+        #1c7d17 0%,
+        #1b2cff 100%
+    );
+
+    transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========================================
+HOVER CARD
+======================================== */
+
+.readme__card:hover{
+    transform:
+    translateY(-8px)
+    scale(1.02);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.35);
+
+    cursor: pointer;
+}
+
+/* ========================================
+LISTA
+======================================== */
+
+.readme__lista{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+
+    list-style: none;
+}
+
+/* ========================================
+ITENS
+======================================== */
+
+.readme__detalhes{
+    color: #ffffff;
+
+    font-size: clamp(1rem, 2vw, 1.15rem);
+
+    line-height: 1.7;
+
+    text-align: left;
+
+    position: relative;
+
+    padding-left: 1.5rem;
+}
+
+/* ========================================
+BOLINHA CUSTOMIZADA
+======================================== */
+
+.readme__detalhes::before{
+    content: "•";
+
+    position: absolute;
+
+    left: 0;
+
+    color: yellow;
+
+    font-size: 1.2rem;
+}
+
+/* ========================================
+OBJETIVO
+======================================== */
+
+.readme__objetivo{
+    width: 100%;
+
+    max-width: 900px;
+
+    padding: clamp(1.5rem, 4vw, 2rem);
+
+    border-radius: 25px;
+
+    background: linear-gradient(
+        145deg,
+        #010507 0%,
+        #071d06 100%
+    );
+
+    text-align: center;
+
+    color: #ffffff;
+
+    font-size: clamp(1rem, 2vw, 1.2rem);
+
+    line-height: 1.8;
+}
+
+/* ========================================
+RESPONSIVO
+======================================== */
+
+@media (max-width: 768px){
+
+    .readme__container{
+        padding: 2rem 1.2rem;
+    }
+
+    .readme__card{
+        max-width: 100%;
+    }
+
+    .readme__detalhes{
+        text-align: left;
+    }
+}
+
+
+
+
+/* ========================================
+MEDIA QUERY MOBILE
+======================================== */
+
+/*
+Ajustado:
+- menu em coluna
+- hero mais compacto
+- alinhamentos centralizados
+*/
+
+@media (max-width: 768px){
+
+    .header{
+        height: auto;
+
+        padding: 15px 0;
+    }
+
+    .container{
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .header__menu{
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    body{
+        padding-top: 140px;
+    }
+
+    .container__apresentacao{
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .texto-sobre{
+        align-items: center;
+    }
+
+    .cards__artigos{
+        max-width: 100%;
+    }
+}
+
+/* ========================================
+RESPONSIVO
+======================================== */
+
+@media (max-width: 768px){
+
+    .header{
+        height: auto;
+
+        padding: 1rem 0;
+    }
+
+    .container{
+        flex-direction: column;
+
+        gap: 1rem;
+    }
+
+    .header__nav{
+        width: 100%;
+    }
+
+    .header__menu{
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .header__link{
+        width: auto;
+    }
+}
