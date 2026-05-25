@@ -123,7 +123,7 @@ Pretendo futuramente adicionar:
 
 # 👨‍💻 Autor
 
-Desenvolvido por Clebson  
+Desenvolvido por Clebson Silva
 Front-End Developer em evolução 🚀
 
 Futuro FullStack.
