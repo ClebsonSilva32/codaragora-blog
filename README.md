@@ -48,11 +48,17 @@ Neste projeto estou praticando:
 # 🖥️ Funcionalidades
 
 ✅ Header fixo responsivo
+
 ✅ Hero Section moderna
+
 ✅ Cards de artigos
+
 ✅ Seção README visual
+
 ✅ Layout adaptado para mobile
+
 ✅ Hover effects
+
 ✅ Estrutura organizada
 
 ---
