@@ -6,6 +6,16 @@ O objetivo deste projeto é praticar conceitos modernos de HTML5 e CSS3, criando
 
 ---
 
+# 🌐 Deploy
+
+Projeto disponível online:
+
+🔗 https://clebsonsilva32.github.io/codaragora-blog/
+
+Publicado utilizando GitHub Pages como parte do processo de aprendizado em versionamento, hospedagem e desenvolvimento Front-End.
+
+---
+
 # 📸 Preview do Projeto
 
 ![Preview do Projeto](img/preview.png)
