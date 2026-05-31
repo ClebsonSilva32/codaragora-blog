@@ -6,13 +6,11 @@ O objetivo deste projeto é praticar conceitos modernos de HTML5 e CSS3, criando
 
 ---
 
-# 🌐 Deploy
-
-Projeto disponível online:
+# 🌐 Projeto Online
 
 🔗 https://clebsonsilva32.github.io/codaragora-blog/
 
-Publicado utilizando GitHub Pages como parte do processo de aprendizado em versionamento, hospedagem e desenvolvimento Front-End.
+Publicado utilizando GitHub Pages como parte do meu processo de aprendizado em versionamento, hospedagem e desenvolvimento Front-End.
 
 ---
 
@@ -63,8 +61,6 @@ Neste projeto estou praticando:
 
 ✅ Cards de artigos
 
-✅ Seção README visual
-
 ✅ Layout adaptado para mobile
 
 ✅ Hover effects
@@ -100,7 +96,9 @@ CodarAgora/
 
 Este projeto representa minha evolução nos estudos de Desenvolvimento Web Front-End e também marca meu primeiro contato com Git e GitHub.
 
-Durante o desenvolvimento do CodarAgora, comecei a aprender conceitos fundamentais de versionamento, como criação de repositórios, commits e controle de alterações.
+Decidi começar a utilizar versionamento desde os primeiros projetos para desenvolver boas práticas, acompanhar minha evolução e me aproximar do fluxo de trabalho utilizado no mercado.
+
+Durante o desenvolvimento do CodarAgora, comecei a aprender conceitos fundamentais como criação de repositórios, commits, histórico de alterações e integração com o GitHub.
 
 Meu primeiro commit neste projeto foi:
 
@@ -150,4 +148,4 @@ Desenvolvido por Clebson Silva
 
 🚀 Evoluindo através de projetos reais, estudos contínuos e prática diária.
 
-> Este projeto não representa um ponto de chegada, mas uma etapa da minha jornada como desenvolvedor. Cada atualização e cada commit registram um novo aprendizado.
+> Este projeto registra não apenas meu aprendizado em Front-End, mas também meus primeiros passos com Git e versionamento de código. Cada atualização representa um novo aprendizado e um avanço na minha jornada como desenvolvedor.
