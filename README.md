@@ -12,7 +12,6 @@ O objetivo deste projeto é praticar conceitos modernos de HTML5 e CSS3, criando
 
 ---
 
-
 # 🚧 Projeto em Evolução
 
 Este projeto representa minha evolução prática nos estudos de HTML5 e CSS3.
@@ -23,12 +22,12 @@ Ainda estou aprendendo diversos conceitos de CSS moderno, responsividade e organ
 
 # 📚 Tecnologias Utilizadas
 
-- HTML5
-- CSS3
-- Flexbox
-- Responsividade
-- Semântica HTML
-- Acessibilidade básica
+* HTML5
+* CSS3
+* Flexbox
+* Responsividade
+* Semântica HTML
+* Acessibilidade básica
 
 ---
 
@@ -36,24 +35,24 @@ Ainda estou aprendendo diversos conceitos de CSS moderno, responsividade e organ
 
 Neste projeto estou praticando:
 
-- Estruturação semântica
-- Organização profissional do CSS
-- Layouts responsivos
-- Tipografia fluida com `clamp()`
-- Efeitos visuais modernos
-- Boas práticas no Front-End
-- Estrutura de componentes visuais
+* Estruturação semântica
+* Organização profissional do CSS
+* Layouts responsivos
+* Tipografia fluida com `clamp()`
+* Efeitos visuais modernos
+* Boas práticas no Front-End
+* Estrutura de componentes visuais
 
 ---
 
 # 🖥️ Funcionalidades
 
-✅ Header fixo responsivo  
-✅ Hero Section moderna  
-✅ Cards de artigos  
-✅ Seção README visual  
-✅ Layout adaptado para mobile  
-✅ Hover effects  
+✅ Header fixo responsivo
+✅ Hero Section moderna
+✅ Cards de artigos
+✅ Seção README visual
+✅ Layout adaptado para mobile
+✅ Hover effects
 ✅ Estrutura organizada
 
 ---
@@ -62,19 +61,9 @@ Neste projeto estou praticando:
 
 O projeto foi desenvolvido pensando em diferentes tamanhos de tela:
 
-- Desktop
-- Tablet
-- Mobile
-
----
-
-# 📸 Preview do Projeto
-
-Adicione aqui uma imagem do projeto futuramente:
-
-```md
-![Preview do Projeto](img/preview.png)
-```
+* Desktop
+* Tablet
+* Mobile
 
 ---
 
@@ -91,16 +80,35 @@ CodarAgora/
 
 ---
 
+# 📌 Minha Jornada
+
+Este projeto representa minha evolução nos estudos de Desenvolvimento Web Front-End e também marca meu primeiro contato com Git e GitHub.
+
+Durante o desenvolvimento do CodarAgora, comecei a aprender conceitos fundamentais de versionamento, como criação de repositórios, commits e controle de alterações.
+
+Meu primeiro commit neste projeto foi:
+
+```text
+dadd75a - Primeira versão do Blog CodarAgora
+```
+
+Ainda estou em processo de aprendizado e evolução, buscando aplicar boas práticas, melhorar a organização do código e desenvolver projetos cada vez mais profissionais.
+
+Acredito que compartilhar essa jornada faz parte do crescimento como desenvolvedor, e este repositório registra cada etapa dessa evolução.
+
+---
+
 # 💡 Aprendizados
 
 Durante esse projeto venho evoluindo principalmente em:
 
-- HTML semântico
-- Organização de código
-- Responsividade
-- Estrutura visual moderna
-- Planejamento de layouts
-- Acessibilidade
+* HTML semântico
+* Organização de código
+* Responsividade
+* Estrutura visual moderna
+* Planejamento de layouts
+* Acessibilidade
+* Git e controle de versões
 
 ---
 
@@ -108,21 +116,22 @@ Durante esse projeto venho evoluindo principalmente em:
 
 Pretendo futuramente adicionar:
 
-- JavaScript
-- Menu Mobile
-- Dark Mode
-- Animações avançadas
-- Integração com APIs
-- Melhorias de acessibilidade
-- Versionamento mais avançado
+* JavaScript
+* Menu Mobile
+* Dark Mode
+* Animações avançadas
+* Integração com APIs
+* Melhorias de acessibilidade
+* Versionamento mais avançado
 
 ---
 
 # 👨‍💻 Autor
 
-Desenvolvido por Clebson  
-Front-End Developer em evolução 🚀
+Desenvolvido por Clebson Silva
 
-Futuro FullStack.
+💻 Desenvolvedor Front-End em formação
 
----
+🚀 Evoluindo através de projetos reais, estudos contínuos e prática diária.
+
+> Este projeto não representa um ponto de chegada, mas uma etapa da minha jornada como desenvolvedor. Cada atualização e cada commit registram um novo aprendizado.
